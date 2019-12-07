@@ -129,10 +129,10 @@ def play(board)
   end
 
   if won?(board) == true && current_player(board) == "X"
-    return "Congratulations X!"
+    puts "Congratulations X!"
   elsif won?(board) == true && current_player(board) == "O"
-    return "Congratulations O!"
+    puts "Congratulations O!"
   elsif draw?(board) == true
-    return "Cat's Game!"
+    puts "Cat's Game!"
   end
 end
