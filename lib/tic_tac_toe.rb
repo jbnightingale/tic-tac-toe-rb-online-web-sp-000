@@ -134,7 +134,5 @@ def play(board)
     puts "Congratulations #{current_player(board)}!"
   elsif draw?(board) == true
     puts "Cat's Game!"
-  else
-    turn(board)
   end
 end
