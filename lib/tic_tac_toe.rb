@@ -60,8 +60,6 @@ def turn_count(board)
   return counter
 end
 
-##### why is this never referenced, how can it be referenced in turns so it knows who's turn to play?
-
 def current_player(board)
   if turn_count(board).even? == true
     return "X"
@@ -130,8 +128,10 @@ def play(board)
     turn(board)
   end
 
-  if won?(board) == true
-    puts "Congratulations #{current_player(board)}!"
+  if won?(board) == true && current_player(board) == "X"
+    puts "Congratulations X!"
+  elsif won?(board) == true && current_player(board) == "O"
+    puts "Congratulations O!"
   elsif draw?(board) == true
     puts "Cat's Game!"
   end
