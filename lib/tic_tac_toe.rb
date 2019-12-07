@@ -129,7 +129,7 @@ def play(board)
   until over?(board) == true
     turn(board)
   end
-  
+
   if won?(board) == true
     puts "Congratulations #{current_player(board)}!"
   elsif draw?(board) == true
